@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.data.domain.Page;
+
 import br.com.alura.forum.modelo.Topico;
 
 public class TopicoDto {
@@ -34,8 +36,9 @@ public class TopicoDto {
 		return dataCriacao;
 	}
 	
-	public static List<TopicoDto> converter(List<Topico> topicos){
-		return topicos.stream().map(TopicoDto::new).collect(Collectors.toList());
+	public static Page<TopicoDto> converter(Page<Topico> topicos){
+						//TopicoDto::new serve para chamar o construtor
+		return topicos.map(TopicoDto::new);
 		
 	}
 	

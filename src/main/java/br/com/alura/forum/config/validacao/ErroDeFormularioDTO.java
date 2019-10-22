@@ -4,6 +4,7 @@ public class ErroDeFormularioDTO {
 
 	private String campo;
 	private String erro;
+	
 	public ErroDeFormularioDTO(String campo, String erro) {
 		super();
 		this.campo = campo;

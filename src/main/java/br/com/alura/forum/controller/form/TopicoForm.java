@@ -40,7 +40,7 @@ public class TopicoForm {
 		this.nomeCurso = nomeCurso;
 	}
 	 
-	
+	//Esse CursoRepository serve para que eu possa carregar a entidade Curso para poder retornar para o controller
 	public Topico converter(CursoRepository cursoRepository) {
 		Curso curso = cursoRepository.findByNome(nomeCurso);
 		return new Topico(titulo, mensagem, curso);
