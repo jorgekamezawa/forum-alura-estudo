@@ -45,7 +45,7 @@ import br.com.alura.forum.repository.TopicoRepository;
 @RestController 
 
 //Mapear o endereço
-@RequestMapping("/Topicos")
+@RequestMapping("/topicos")
 public class TopicoController {
 	
 	
