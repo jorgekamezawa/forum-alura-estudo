@@ -41,7 +41,7 @@ import br.com.alura.forum.repository.CursoRepository;
 import br.com.alura.forum.repository.TopicoRepository;
 
 //Para substituir o ResponseBody que serve para que o Spring nao faça uma navegação para uma pagina
-//porem queremos devovler o que estiver retornando no metodo, entao ele pega o que esta no corpo da requisiçaõ
+//porem queremos devolver o que estiver retornando no metodo, entao ele pega o que esta no corpo da requisiçaõ
 @RestController 
 
 //Mapear o endereço
